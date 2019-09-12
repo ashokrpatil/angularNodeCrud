@@ -1,0 +1,5 @@
+https://community.algolia.com/angular-instantsearch/getting-started.html
+
+https://mdbootstrap.com/docs/angular/forms/search/
+
+https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListWithSearchBar/Angular/Light/

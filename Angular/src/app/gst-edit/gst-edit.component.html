@@ -1,0 +1,38 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-4">Item Code</label>
+        <input type="text" class="form-control" formControlName="item_code" #item_code [(ngModel)] = "business.item_code"/>
+      </div>
+      <div *ngIf="angForm.controls['item_code'].invalid && (angForm.controls['item_code'].dirty || angForm.controls['item_code'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['item_code'].errors.required">
+          Item Code is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Vendor Code </label>
+        <input type="text" class="form-control" formControlName="vendor_code" #vendor_code [(ngModel)] = "business.vendor_code" />
+      </div>
+      <div *ngIf="angForm.controls['vendor_code'].invalid && (angForm.controls['vendor_code'].dirty || angForm.controls['vendor_code'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['vendor_code'].errors.required">
+          Vendor Code is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Plant Code </label>
+        <input type="text" class="form-control" formControlName="plant_code" #plant_code [(ngModel)] = "business.plant_code" />
+      </div>
+      <div *ngIf="angForm.controls['plant_code'].invalid && (angForm.controls['plant_code'].dirty || angForm.controls['plant_code'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['plant_code'].errors.required">
+          Plant Code Number is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <button (click)="updateBusiness(item_code.value, vendor_code.value, plant_code.value)"
+        [disabled]="angForm.invalid" 
+        class="btn btn-primary">Update Business</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+{ "msldata":[
+    {
+        "_id": "5c9ca11586ac521d9ce68792",
+        "item_code": "abcd",
+        "vendor_code": "efgh",
+        "plant_code": 1234,
+        "__v": 0
+    },
+    {
+        "_id": "5c9ca76486ac521d9ce68794",
+        "item_code": "Laptop",
+        "vendor_code": "HP",
+        "plant_code": 123,
+        "__v": 0
+    },
+    {
+        "_id": "5c9cc48286ac521d9ce68795",
+        "item_code": "Engineering Material ",
+        "vendor_code": "Mahindra ",
+        "plant_code": 1235,
+        "__v": 0
+    },
+    {
+        "_id": "5ca48ef0ec9ed43a9cefe119",
+        "item_code": "abcd ",
+        "vendor_code": "efgh",
+        "plant_code": 123456,
+        "__v": 0
+    }
+]
+}
